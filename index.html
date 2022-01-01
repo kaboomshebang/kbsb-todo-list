@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript Todo-list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dist/main.js" type="module"></script>
+</head>
+<body>
+    <header class="container">
+        <h1>Typescript Todo-list</h1>
+    </header>
+    <main class="container">
+        <section>
+            <header>
+                <h2>Todo's</h2>
+            </header>
+            <ul id="todo-list" class="todo-list">
+                <li class="todo-item" prio>
+                    <div class="todo-item-props">
+                        <span>Project ID</span>
+                        <span>
+                            <button>Done</button>
+                            <button>Remove</button>
+                        </span>
+                    </div>
+                    <div class="todo-item-content">
+                        Todo description
+                    </div>
+                </li>
+                <li class="todo-item">
+                    <div class="todo-item-props">
+                        <span>Project ID</span>
+                        <span>
+                            <button>Done</button>
+                            <button>Remove</button>
+                        </span>
+                    </div>
+                    <div class="todo-item-content">
+                        Todo description
+                    </div>
+                </li>
+                <li class="todo-item" done>
+                    <div class="todo-item-props">
+                        <span>Project ID</span>
+                        <span>
+                            <button>Done</button>
+                            <button>Remove</button>
+                        </span>
+                    </div>
+                    <div class="todo-item-content">
+                        Todo description
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <header>
+                <h2>Add new todo</h2>
+            </header>
+            <form id="form" class="todo-form">
+                <div>
+                    <label for="form-input">Todo description:</label>
+                    <input id="form-input" name="form-input" type="text" size="40" value="I have to..." required>
+                </div>
+                <div>
+                    <label for="priority">Priority:</label>
+                    <select name="priority" id="priority" required>
+                        <option value="normal" selected>Normal</option>
+                        <option value="high">High priority</option>
+                        <option value="low">Low priority</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="todo-project-id">Optional 4-digit project ID:</label>
+                    <input type="number" draggable="true" name="todo-project-id" id="todo-project-id" min="1000" max="9999" value="1000">
+                </div>
+                <button type="submit" id="add-todo">Add</button>
+            </form>
+        </section>
+
+    </main>
+    <footer class="container">
+        Created by: <a href="https://www.fredsnyder.net">Fred Snyder</a>
+    </footer>
+</body>
+</html>
