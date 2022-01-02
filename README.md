@@ -24,4 +24,4 @@ tsc ./src/main.ts --watch --sourcemap true --target esnext --module esnext --out
 - [ ] Add Vercel website
 - [ ] Optional: Add NPM config
 - [ ] Optional: Add Vite
-- [ ] Optional: connect to Airtable
+- [ ] Optional: connect to Airtable, SQLite or local storage
