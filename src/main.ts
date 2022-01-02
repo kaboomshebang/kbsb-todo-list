@@ -1,7 +1,7 @@
 // imports https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
-import { Priority, Todo } from './todo';
-import { Project } from './project';
-import * as dom from './dom';
+import { Priority, Todo, TodoList } from './todo.js';
+import { Project } from './project.js';
+import * as dom from './dom.js';
 
 // store all todos
 let todos: Todo[] = [];
