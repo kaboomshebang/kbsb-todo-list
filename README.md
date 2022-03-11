@@ -19,6 +19,8 @@ tsc ./src/main.ts --watch --sourcemap true --target esnext --module esnext --out
 ## Todo's
 
 - [ ] Finish logic for adding and rendering todo's
+    - [ ] done button
+    - [ ] remove button
 - [ ] "Add new project" feature using a modal
 - [ ] Make styling prettier (fonts/forms)
 - [ ] Add Vercel website

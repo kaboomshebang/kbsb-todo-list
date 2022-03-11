@@ -29,11 +29,11 @@ export class TodoList {
 	// add a new todo object to the ul list
 	addTodo(t: Todo) {
 		const li = document.createElement('li');
-		li.className = 'todo-item';
+		li.classList.add('todo-item');
 
 		// the header of the todo item
 		const divProps = document.createElement('div');
-		divProps.className = 'todo-item-props';
+		divProps.classList.add('todo-item-props');
 		// header projectId
 		const divPropsProject = document.createElement('span');
 		divPropsProject.innerText = t.projectId.toString();
@@ -50,7 +50,7 @@ export class TodoList {
 
 		// add the content of the todo
 		const divContent = document.createElement('div');
-		divContent.className = 'todo-item-content';
+		divContent.classList.add('todo-item-content');
 		divContent.innerText = t.description;
 
 		li.appendChild(divProps);
@@ -61,4 +61,8 @@ export class TodoList {
 
 	// remove a todo
 	removeTodo() {}
+
+	test() {
+		console.log('test');
+	}
 }

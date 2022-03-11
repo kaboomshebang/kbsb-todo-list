@@ -26,4 +26,5 @@ dom.form.addEventListener('submit', (e: Event) => {
 	// console.log(todos);
 
 	todoList.addTodo(new Todo(dom.todoProjectID.valueAsNumber, dom.todoDescription.value, prio, false));
+	todoList.test();
 });
